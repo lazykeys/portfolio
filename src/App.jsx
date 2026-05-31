@@ -1,11 +1,14 @@
+import logo from "./assets/images/lazykeys_LogoAnim.webp";
+import { Experience } from "./components/Experience.jsx";
+
 export default function App() {
   return (
-    <div className="flex flex-col m-8 w-auto gap-3">
-      <Header></Header>
-      <Subheader></Subheader>
-      <About></About>
-      <Experience></Experience>
-      <Links></Links>
+    <div className="flex flex-col m-8 w-auto gap-6">
+      <Header/>
+      <Subheader/>
+      <About/>
+      <Experience/>
+      <Links/>
     </div>
   )
 }
@@ -17,7 +20,7 @@ function Header() {
         Hello! I'm
       </h1>
       <img className="w-64 h-auto"
-        src="src/assets/images/lazykeys_LogoAnim.webp" 
+        src={logo}
         alt="lazykeys logo" 
         width="960" 
         height="320">
@@ -44,21 +47,13 @@ function Subheader() {
 
 function About() {
   return (
-    <p className="text-lk-6 font-DigitalDiscoThin text-sm max-w-96">
+    <p className="text-lk-6 font-DigitalDiscoThin text-base max-w-96">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-  )
-}
-
-function Experience() {
-  return (
-    <section className="border-5 border-lk-3 border-radius rounded-xl w-full h-128">
-
-    </section>
   )
 }
 
