@@ -1,0 +1,90 @@
+{
+    "work": [
+        {
+            "id": 1,
+            "iconPath": "src/assets/images/experience_icons/lionheartstudiosllc_logo.webp",
+            "employer": "Lionheart Studios, LLC",
+            "position": "Gameplay Programmer Intern",
+            "startDate": "Apr 2026",
+            "endDate": "Present",
+            "notes": [
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet" 
+            ]
+        },
+        {
+            "id": 2,
+            "iconPath": "src/assets/images/experience_icons/gamesforlove_logo.webp",
+            "employer": "Games For Love",
+            "position": "Gameplay Programmer Intern",
+            "startDate": "Feb 2026",
+            "endDate": "Apr 2026",
+            "notes": [
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet" 
+            ]
+        },
+        {
+            "id": 3,
+            "iconPath": "src/assets/images/experience_icons/usf_logo.webp",
+            "employer": "University of Saint Francis - College of Health Sciences",
+            "position": "Immersive Simulation Developer",
+            "startDate": "Oct 2024",
+            "endDate": "Oct 2025",
+            "notes": [
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet" 
+            ]
+        }
+    ],
+
+    "education": [
+        {
+            "id": 1,
+            "iconPath": null,
+            "school": "University of Saint Francis",
+            "location": "Fort Wayne, IN",
+            "degree": "Gameplay Programmer Intern",
+            "startDate": "Apr 2026",
+            "endDate": "Present",
+            "gpa:": "3.99",
+            "notes": [
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet" 
+            ]
+        }
+    ],
+
+    "projects": [
+        {
+            "id": 1,
+            "iconPath": null,
+            "title": "Uphill Battle",
+            "position": "Lead Programmer",
+            "platform": "Unity 3D",
+            "year": "2025",
+            "notes": [
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet" 
+            ]
+        },
+        {
+            "id": 2,
+            "iconPath": null,
+            "title": "30 Minutes or it's Free",
+            "position": "Lead Programmer",
+            "platform": "Unity 3D",
+            "year": "2025",
+            "notes": [
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet", 
+                "Lorem ipsum dolor sed amet" 
+            ]
+        }
+    ]
+}
