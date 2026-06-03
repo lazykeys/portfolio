@@ -5,27 +5,23 @@ import logo from "/src/assets/images/experience_icons/lionheartstudiosllc_logo.w
 import { RadioButton } from "./RadioButton";
 import { RadioButtonGroup } from "./RadioButtonGroup";
 import experiences from "../assets/data/experiences.json"
+import { useState } from "react";
 
 
 export function Experience() {
 
-    let radioButtons = [
+    const [radioButtons, setRadioButtons] = useState([
         { id: 1, value: "Work", active: true, data: experiences.work },
         { id: 2, value: "Education", active: false, data: experiences.education },
         { id: 3, value: "Projects", active: false, data: experiences.projects }
-    ];
+    ]);
 
-    function setActiveRadioButton({ id }) {
-        const idButton = radioButtons.filter(radioButton => radioButton.id === id);
-        if (idButton.active) return;
-
-        idButton.active = true;
-
-        const otherButtons = radioButtons.filter(radioButton => radioButton.id !== id);
-        otherButtons.forEach(button => button.active = false);
+    function updateState(radioButtons) {
+        setRadioButtons(radioButtons);
     }
-    
-    const activeRadioButton = radioButtons.filter(radioButton => radioButton.active)[0];
+
+    const activeRadioButton = radioButtons.filter(radioButtons => radioButtons.active)[0];
+    console.log(`Active button is: ${activeRadioButton.value}`);
     
     return (
         <div className="flex flex-col gap-3">
@@ -37,8 +33,8 @@ export function Experience() {
                         group="tabs"
                         value={radioButton.value}
                         active={radioButton.active}
-                        data={radioButton.data}
-                        setActiveRadioButton={setActiveRadioButton}
+                        radioButtons={radioButtons}
+                        setRadioButtons={updateState}
                     >
                         {radioButton.value}
                     </RadioButton>
