@@ -17,7 +17,7 @@ export function RadioButton({ id, group, value, active, radioButtons, setRadioBu
     return (
         <div className="flex justify-center items-center w-1/3">
             <input
-                className=""
+                className="hidden"
                 type="radio"
                 id={id}
                 name={group}

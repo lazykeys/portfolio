@@ -17,11 +17,8 @@ export function Experience() {
     ]);
 
     function updateState(radioButtons) {
-        setRadioButtons(radioButtons);
+        setRadioButtons(radioButtons => [...radioButtons]);
     }
-
-    const activeRadioButton = radioButtons.filter(radioButtons => radioButtons.active)[0];
-    console.log(`Active button is: ${activeRadioButton.value}`);
     
     return (
         <div className="flex flex-col gap-3">
@@ -41,7 +38,7 @@ export function Experience() {
                 ))}
             </RadioButtonGroup>
             <section className="border-5 border-lk-3 rounded-xl w-full h-fit">
-                {activeRadioButton.data.map(data => (
+                {radioButtons.filter(radioButtons => radioButtons.active)[0].data.map(data => (
                     <ExperienceItem 
                         key={data.id}
                         icon={data.icon}
