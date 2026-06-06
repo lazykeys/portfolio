@@ -21,6 +21,8 @@
 
     --font-DigitalDiscoRegular: DigitalDiscoRegular;
     --font-DigitalDiscoThin: DigitalDiscoThin;
+
+    --breakpoint-xs: 30rem;
 }
 
 body {

@@ -22,7 +22,7 @@ export function Experience() {
     }
     
     return (
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 h-full">
             <fieldset 
                 className="flex w-full justify-around items-center border-7 border-lk-3 p-0.5 rounded-xl bg-lk-3 gap-2">
                 {radioButtons.map(radioButton => (
@@ -40,7 +40,7 @@ export function Experience() {
                 ))}
             </fieldset>
             
-            <section className="border-5 border-lk-3 rounded-xl w-full h-fit">
+            <section className="border-5 border-lk-3 rounded-xl w-full h-full flex flex-col">
                 {activeRadioButton.data.map(data => (
                     <ExperienceItem key={data.id} value={activeRadioButton.value} data={data}/>
                 ))}
@@ -56,7 +56,7 @@ function ExperienceItem({ value, data }) {
         case "Work":
         case "Education":
             return (
-                <div className="flex">
+                <div className="flex h-fit">
                     <IconBorder icon={data.icon}/>
                     <div className="flex flex-col m-3 w-full">
                         <ItemHeader 
@@ -94,7 +94,7 @@ function ItemHeader ({ header, subheader, startDate, endDate}) {
     return (
         <div>
             <h1 className="text-xl text-lk-6 font-DigitalDiscoRegular">{header}</h1>
-            <div className="flex flex-col items-baseline sm:flex-row sm:justify-between sm:items-center">
+            <div className="flex max-lg:flex-col max-lg:items-baseline flex-row justify-between items-center">
                 <h2 className="text-lg text-lk-6 font-DigitalDiscoThin">{subheader}</h2>
                 <div className="flex w-fit justify-between gap-1">
                     <h3 className="text-md text-lk-6 font-DigitalDiscoThin text-nowrap">{startDate}</h3>
