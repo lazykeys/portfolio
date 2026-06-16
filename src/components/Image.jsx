@@ -23,7 +23,7 @@ function getVariantStyles(variant) {
         case "icon":
             return "mask-radial-at-center mask-radial-from-70% mask-radial-to-70% mask-circle min-w-14 w-14 bg-white"
         case "thumbnail":
-            return "w-auto border-5 border-lk-2 rounded-lg";
+            return "w-auto border-5 border-lk-2 rounded-br-lg rounded-tr-lg rounded-tl-lg";
         default:
             return "";
     }

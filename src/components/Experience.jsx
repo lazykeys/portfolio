@@ -22,7 +22,7 @@ export function Experience() {
     }
     
     return (
-        <div className="flex flex-col h-full gap-3 lg:row-span-2 lg:col-span-1 overflow-hidden">
+        <div className="flex flex-col h-fit max-h-full gap-3 lg:row-span-2 lg:col-span-1 overflow-hidden">
             <fieldset 
                 className="flex w-full justify-around items-center border-7 border-lk-3 p-0.5 rounded-xl bg-lk-3 gap-2">
                 {radioButtons.map(radioButton => (
@@ -85,11 +85,7 @@ function ProjectItem({ data }) {
     return (
         <div className="flex flex-col w-fit m-3">
             <ThumbnailBorder image={data.image}/>
-            <div className="flex m-3 h-full">
-                <div className="flex h-full w-full">
-                    <div className="border-r-2 border-lk-2 mb-2 -mt-10"></div>
-                    <div className="border-l-2 border-lk-2 mb-2 -mt-10"></div>
-                </div>
+            <div className="flex m-3 mt-0 h-full border-l-5 border-lk-2 pl-4 pt-4">
                 <div className="flex-col w-full justify-center items-center">
                     <ItemHeader 
                         header={data.header} 
@@ -110,7 +106,7 @@ function ProjectItem({ data }) {
 
 function ThumbnailBorder({ image }) {
     return (
-    <div className="flex flex-col m-3">
+    <div className="flex flex-col m-3 mb-0">
         <Image variant="thumbnail" src={image}/>
     </div>
 )
