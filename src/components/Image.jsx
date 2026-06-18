@@ -4,6 +4,8 @@ import usfLogo from "/src/assets/images/experience_icons/usf_logo.webp";
 import lionheartLogo from "/src/assets/images/experience_icons/lionheartstudiosllc_logo.webp";
 import gflLogo from "/src/assets/images/experience_icons/gamesforlove_logo.webp";
 import uphillBattleThumbnail from "/src/assets/images/project_thumbnails/uphill_battle_thumb.webp";
+import thirtyMOIFThumbnail from "/src/assets/images/project_thumbnails/30MOIF_thumb.webp";
+import fortuneQuellerThumbnail from "/src/assets/images/project_thumbnails/fortune_queller_thumb.webp";
 
 export function Image({ variant = null, src, className, ...props }) {
     return (
@@ -23,7 +25,7 @@ function getVariantStyles(variant) {
         case "icon":
             return "mask-radial-at-center mask-radial-from-70% mask-radial-to-70% mask-circle min-w-14 w-14 bg-white"
         case "thumbnail":
-            return "w-auto border-5 border-lk-2 rounded-br-lg rounded-tr-lg rounded-tl-lg";
+            return "aspect-16/9 border-5 border-lk-2 rounded-br-lg rounded-tr-lg rounded-tl-lg";
         default:
             return "";
     }
@@ -41,5 +43,9 @@ function getImageSource(src) {
             return gflLogo;
         case "uphillBattle":
             return uphillBattleThumbnail;
+        case "30MOIF":
+            return thirtyMOIFThumbnail;
+        case "fortuneQueller":
+            return fortuneQuellerThumbnail;
     }
 }

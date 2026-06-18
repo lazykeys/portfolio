@@ -40,7 +40,6 @@ function Subheader() {
   return (
     <div className="flex flex-col h-fit">
       <h2 className="text-lk-6 font-DigitalDiscoThin text-2xl lg:text-3xl">Game & Frontend Developer</h2>
-
       <div className="flex gap-2">
         <svg className="w-6 h-7 lg:w-8 lg:h-8" viewBox="-3 0 20 20"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-223.000000, -5399.000000)" className="fill-lk-3"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M174,5248.219 C172.895,5248.219 172,5247.324 172,5246.219 C172,5245.114 172.895,5244.219 174,5244.219 C175.105,5244.219 176,5245.114 176,5246.219 C176,5247.324 175.105,5248.219 174,5248.219 M174,5239 C170.134,5239 167,5242.134 167,5246 C167,5249.866 174,5259 174,5259 C174,5259 181,5249.866 181,5246 C181,5242.134 177.866,5239 174,5239" id="pin_fill_sharp_circle-[#000000]"> </path> </g> </g> </g> </g></svg>
         <h3 className="text-lk-6 font-DigitalDiscoThin text-2xl lg:text-3xl">Ohio, USA</h3>
@@ -57,7 +56,6 @@ function About() {
         a mouse or a controller. My passion for game and web development springs from the importance
         I place on user satisfaction through accessibility, aesthetics, and a little adventure!
       </p>
-
       <p className="text-lk-6 font-DigitalDiscoThin text-base lg:text-xl max-w-96">
         My toolkit consists of over four years of Unity Engine and C# gained through my collegiate career,
         including class projects, solo development, and game jams. My frontend skills gained through college 

@@ -65,7 +65,7 @@ function ExperienceItem({ data }) {
         <div className="flex h-fit">
             <IconBorder image={data.image}/>
             <div className="flex flex-col m-3 w-full">
-                <ItemHeader 
+                <ExperienceHeader 
                     header={data.header} 
                     subheader={data.subheader} 
                     startDate={data.startDate} 
@@ -84,14 +84,16 @@ function ExperienceItem({ data }) {
 function ProjectItem({ data }) {
     return (
         <div className="flex flex-col w-fit mx-3 mt-3">
-            <ThumbnailBorder image={data.image}/>
+            <a href={data.link}>
+                <ThumbnailBorder image={data.image}/>
+            </a>
             <div className="flex m-3 mt-0 h-full border-l-5 border-lk-2 pl-4 pt-4">
                 <div className="flex-col w-full justify-center items-center">
-                    <ItemHeader 
+                    <ProjectHeader
                         header={data.header} 
-                        subheader={data.subheader} 
-                        startDate={data.startDate} 
-                        endDate={data.endDate}
+                        subheader={data.subheader}
+                        year={data.year}
+                        link={data.link}
                     />
                     <ul className="list-disc">
                         {data.notes.map((note, index) => (
@@ -124,7 +126,7 @@ function IconBorder ({ image }) {
     )
 }
 
-function ItemHeader ({ header, subheader, startDate, endDate}) {
+function ExperienceHeader ({ header, subheader, startDate, endDate}) {
     return (
         <div>
             <h1 className="text-xl text-lk-6 font-DigitalDiscoRegular">{header}</h1>
@@ -140,6 +142,16 @@ function ItemHeader ({ header, subheader, startDate, endDate}) {
     );
 }
 
-function ProjectItemHeader ({ header, subheader }) {
-    return null;
+function ProjectHeader ({ header, subheader, year, link }) {
+    return (
+        <div>
+            <h1>
+                <a className="text-xl text-lk-6 font-DigitalDiscoRegular hover:underline" href={link}>{header}</a>
+            </h1>
+            <div className="flex flex-col justify-between">
+                <h2 className="text-lg text-lk-6 font-DigitalDiscoThin">{subheader}</h2>
+                <h3 className="text-md text-lk-6 font-DigitalDiscoThin">{year}</h3>
+            </div>
+        </div>
+    );
 }

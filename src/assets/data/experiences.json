@@ -61,49 +61,49 @@
             "subheader": "Lead Programmer",
             "year": "2025",
             "notes": [
-                "Lorem ipsum dolor sed amet", 
-                "Lorem ipsum dolor sed amet", 
-                "Lorem ipsum dolor sed amet" 
+                "Created procedural generation algorithm for level generation", 
+                "Created behavior trees for smart enemy AI", 
+                "Worked with composer to implement FMOD events into existing codebase" 
             ],
             "tags": [
                 "Unity",
                 "C#"
             ],
-            "link": ""
+            "link": "https://lazykeys.itch.io/uphill-battle"
         },
         {
             "id": 2,
-            "image": "uphillBattle",
+            "image": "30MOIF",
             "header": "30 Minutes or it's Free",
             "subheader": "Lead Programmer",
             "year": "2025",
             "notes": [
-                "Lorem ipsum dolor sed amet", 
-                "Lorem ipsum dolor sed amet", 
-                "Lorem ipsum dolor sed amet" 
+                "Led player controller and parkour-movement development", 
+                "Built a tool that allowed level designers to easily configure patrolling NPCs",
+                "Created powerups and stat-leveling system"
             ],
             "tags": [
                 "Unity",
                 "C#"
             ],
-            "link": ""
+            "link": "https://wispylatte.itch.io/30-minutes-or-its-free"
         },
         {
             "id": 3,
-            "image": "uphillBattle",
-            "header": "30 Minutes or it's Free",
+            "image": "fortuneQueller",
+            "header": "Fortune Queller",
             "subheader": "Lead Programmer",
             "year": "2025",
             "notes": [
-                "Lorem ipsum dolor sed amet", 
-                "Lorem ipsum dolor sed amet", 
-                "Lorem ipsum dolor sed amet" 
+                "Created card-dragging system and card visuals",
+                "Programmed card abilities and their interactions with enemies",
+                "Built player controller"
             ],
             "tags": [
                 "Unity",
                 "C#"
             ],
-            "link": ""
+            "link": "https://wispylatte.itch.io/fortune-queller"
         }
     ]
 }
