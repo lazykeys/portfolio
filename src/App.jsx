@@ -1,10 +1,15 @@
+import { useState } from "react";
 import { Button } from "./components/Button.jsx";
 import { Portfolio } from "./components/Portfolio.jsx";
 import { Svg } from "./components/Svg.jsx";
 import { Image } from "./components/Image.jsx";
 import resume from "./assets/data/Jagger Walraven's Resume.pdf";
+import { Game } from "./components/Game.jsx";
 
 export default function App() {
+
+  const [gameActive, setGameActive] = useState(false)
+
   return (
     <div className="flex justify-center items-center lg:h-screen">
       <div className="flex flex-col m-6 gap-6 lg:grid lg:grid-cols-2 lg:max-w-5xl lg:h-11/12 lg:justify-center lg:m-8">
@@ -16,6 +21,12 @@ export default function App() {
           <Portfolio/>
           <Links/>
       </div>
+        <Game/>
+          <Image 
+            src="lazyLaunch" 
+            className="fixed w-15 lg:w-20 bottom-4 right-4 lg:bottom-4 lg:right-6 animate-bounce hover:cursor-pointer"
+            onClick={() => window.open('/portfolio/src/public/lazy_launch.html')}
+          />
     </div>
   )
 }
@@ -75,7 +86,7 @@ function Links() {
         <Svg icon="github" href="https://github.com/lazykeys"/>
         <Svg icon="itch" href="https://lazykeys.itch.io/"/>
         <Svg icon="linkedin" href="https://www.linkedin.com/in/jaggerwalraven/"/>
-        <Svg icon="email" href="mailto:jagger.walraven.stcharlesprep@gmail.com"/>
+        <Svg icon="email" href="mailto:jaggerwalraven@gmail.com"/>
       </nav>
     </div>
   )

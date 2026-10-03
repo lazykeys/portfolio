@@ -21,7 +21,17 @@
 
     --font-DigitalDiscoRegular: DigitalDiscoRegular;
     --font-DigitalDiscoThin: DigitalDiscoThin;
+    --animate-slidein: slidein 1s ease-in-out;
+    @keyframes slidein {
+        0% {
+        margin-top: 200vh;
+        }
+        100% {
+            top:
+        }
+    }
 }
+
 
 body {
     background-color: var(--color-lk-0);

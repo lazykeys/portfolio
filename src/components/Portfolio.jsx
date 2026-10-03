@@ -1,6 +1,3 @@
-import { Button } from "./Button";
-import { Svg } from "./Svg";
-import logo from "/src/assets/images/experience_icons/lionheartstudiosllc_logo.webp";
 import { RadioButton } from "./RadioButton";
 import portfolioData from "../assets/data/portfolio.json"
 import { useState } from "react";

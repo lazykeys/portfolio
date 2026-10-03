@@ -8,6 +8,7 @@ import thirtyMOIFThumbnail from "/src/assets/images/project_thumbnails/30MOIF_th
 import fortuneQuellerThumbnail from "/src/assets/images/project_thumbnails/fortune_queller_thumb.webp";
 import diggyDogThumbnail from "/src/assets/images/project_thumbnails/diggy_dog_thumb.webp";
 import toiletTimeTravelerThumbnail from "/src/assets/images/project_thumbnails/toilet_time_traveler_thumb.webp";
+import lazyLaunchIcon from "/src/assets/images/lazylaunch.webp";
 
 export function Image({ variant = null, src, className, ...props }) {
     return (
@@ -53,5 +54,7 @@ function getImageSource(src) {
             return diggyDogThumbnail;
         case "toiletTimeTraveler":
             return toiletTimeTravelerThumbnail;
+        case "lazyLaunch":
+            return lazyLaunchIcon
     }
 }
