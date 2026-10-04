@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 export function RadioButton({ id, group, value, active, radioButtons, setRadioButtons, ...props }) {

@@ -3,12 +3,12 @@ import { Button } from "./components/Button.jsx";
 import { Portfolio } from "./components/Portfolio.jsx";
 import { Svg } from "./components/Svg.jsx";
 import { Image } from "./components/Image.jsx";
-import resume from "./assets/data/Jagger Walraven's Resume.pdf";
 import { Game } from "./components/Game.jsx";
+import resume from "./assets/data/Jagger Walraven's Resume.pdf";
 
 export default function App() {
 
-  const [gameActive, setGameActive] = useState(false)
+  const [gameActive, setGameActive] = useState(false);
 
   return (
     <div className="flex justify-center items-center lg:h-screen">
@@ -21,12 +21,12 @@ export default function App() {
           <Portfolio/>
           <Links/>
       </div>
-        <Game/>
-          <Image 
-            src="lazyLaunch" 
-            className="fixed w-15 lg:w-20 bottom-4 right-4 lg:bottom-4 lg:right-6 animate-bounce hover:cursor-pointer"
-            onClick={() => window.open('/portfolio/src/public/lazy_launch.html')}
-          />
+      <Image
+        src="lazyLaunch" 
+        className="fixed w-15 lg:w-20 bottom-4 right-4 lg:bottom-4 lg:right-6 animate-bounce hover:cursor-pointer z-20"
+        onClick={() => setGameActive(!gameActive)}
+      />
+      <Game active={gameActive}/>
     </div>
   )
 }

@@ -15,7 +15,7 @@ export function Portfolio() {
 
     const activeRadioButton = radioButtons.filter(radioButtons => radioButtons.active)[0];
 
-    function updateState(radioButtons) {
+    function updateState() {
         setRadioButtons(radioButtons => [...radioButtons]);
     }
     
