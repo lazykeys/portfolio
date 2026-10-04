@@ -56,6 +56,25 @@
     "projects": [
         {
             "id": 1,
+            "image": "farsided",
+            "header": "Farsided",
+            "subheader": "Lead Programmer",
+            "year": "2026",
+            "notes": [
+                "3rd-place winner of the Game Demo Jam II on itch.io 🥉", 
+                "Developed low-gravity player controller with jetpack movement", 
+                "Worked with artist to finish polished game in just 10 days"
+            ],
+            "tags": [
+                "Unity",
+                "C#",
+                "PC",
+                "Web"
+            ],
+            "link": "https://wispylatte.itch.io/farsided"
+        },
+        {
+            "id": 2,
             "image": "uphillBattle",
             "header": "Uphill Battle",
             "subheader": "Lead Programmer",
@@ -73,7 +92,7 @@
             "link": "https://lazykeys.itch.io/uphill-battle"
         },
         {
-            "id": 2,
+            "id": 3,
             "image": "30MOIF",
             "header": "30 Minutes or it's Free",
             "subheader": "Lead Programmer",
@@ -92,7 +111,7 @@
             "link": "https://wispylatte.itch.io/30-minutes-or-its-free"
         },
         {
-            "id": 3,
+            "id": 4,
             "image": "fortuneQueller",
             "header": "Fortune Queller",
             "subheader": "Lead Programmer",
@@ -111,7 +130,7 @@
             "link": "https://wispylatte.itch.io/fortune-queller"
         },
         {
-            "id": 4,
+            "id": 5,
             "image": "diggyDog",
             "header": "Diggy Dog",
             "subheader": "Lead Programmer",
@@ -129,7 +148,7 @@
             "link": "https://lazykeys.itch.io/diggy-dog"
         },
         {
-            "id": 5,
+            "id": 6,
             "image": "toiletTimeTraveler",
             "header": "Toilet Time Traveler",
             "subheader": "Programmer",

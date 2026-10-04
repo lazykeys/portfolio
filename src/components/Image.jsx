@@ -3,6 +3,7 @@ import logo from "/src/assets/images/lazykeys_LogoAnim.webp";
 import usfLogo from "/src/assets/images/experience_icons/usf_logo.webp";
 import lionheartLogo from "/src/assets/images/experience_icons/lionheartstudiosllc_logo.webp";
 import gflLogo from "/src/assets/images/experience_icons/gamesforlove_logo.webp";
+import farsidedThumbnail from "/src/assets/images/project_thumbnails/farsided_thumb.webp"
 import uphillBattleThumbnail from "/src/assets/images/project_thumbnails/uphill_battle_thumb.webp";
 import thirtyMOIFThumbnail from "/src/assets/images/project_thumbnails/30MOIF_thumb.webp";
 import fortuneQuellerThumbnail from "/src/assets/images/project_thumbnails/fortune_queller_thumb.webp";
@@ -44,6 +45,8 @@ function getImageSource(src) {
             return lionheartLogo;
         case "gfl":
             return gflLogo;
+        case "farsided":
+            return farsidedThumbnail;
         case "uphillBattle":
             return uphillBattleThumbnail;
         case "30MOIF":
