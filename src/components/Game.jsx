@@ -28,7 +28,7 @@ function toggleGame(active)
     if (previousState === null)
     {
         previousState = active;
-        return "";
+        return "-z-10";
     }
     else
     {

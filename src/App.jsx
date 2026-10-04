@@ -23,7 +23,7 @@ export default function App() {
       </div>
       <Image
         src="lazyLaunch" 
-        className="fixed w-15 lg:w-20 bottom-4 right-4 lg:bottom-4 lg:right-6 animate-bounce hover:cursor-pointer z-20"
+        className="hidden lg:block fixed w-15 lg:w-20 bottom-4 right-4 lg:bottom-4 lg:right-6 animate-bounce hover:cursor-pointer z-20"
         onClick={() => setGameActive(!gameActive)}
       />
       <Game active={gameActive}/>
